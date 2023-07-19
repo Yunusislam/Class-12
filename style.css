@@ -1,4 +1,95 @@
-h2{
-    background-color: red;
-    font-size: 60px;
+*{
+    padding: 0;
+    margin: 0;
 }
+.headermenu{
+    background: #3498af;
+}
+.headermenu ul{
+    text-align: center;
+}
+.headermenu ul li{
+    display: inline-block;
+}
+.headermenu ul li a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 15px 30px;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    font-size: 20px;
+}
+.headermenu ul li:first-child a{
+    border-left: 1px solid #ddde;
+}
+.headermenu ul li a:hover{
+    background-color: #3498fa;
+}
+
+/* dropdown section */
+
+.headermenu ul li{
+    position: relative;
+}
+.headermenu ul li ul{
+    position: absolute;
+    width: 300px;
+    background-color: #3498af;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid #ddd;
+    transition: .5s;
+}
+.headermenu ul li ul li{
+    display: block;
+    margin-left: 0;
+    margin: 0;
+}
+.headermenu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.headermenu ul ul li a:hover{
+   
+}
+
+/* Hover Part */
+.headermenu ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaley(0);
+    transform-origin: top center;
+}
+.headermenu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaley(1);
+}
+
+/* Social Icone */
+
+
+.social-icone{
+    background-color: #f39c12;
+    margin-top: 273px;
+}
+.social-icone ul{
+    text-align: center;
+}
+.social-icone ul li{
+    display: inline-block;
+}
+.social-icone ul li a{
+    display: inline-block;
+    margin-left: -5px;
+    font-size: 63px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+    background: purple;
+    width: 100px;
+}
+    
